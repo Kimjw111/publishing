@@ -3,11 +3,12 @@
 
 /* container */
 .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .row{
     margin: 0 20px;
+    position: relative;
 }
 
 /* header */
@@ -15,14 +16,16 @@
     font-weight: 700;
     font-size: 30px;
     color: #393939;
-    line-height: 40px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 #header .menu{
     position: absolute;
     width: 40px;
     height: 40px;
     right: 0;
-    background: #000;
+    background: linear-gradient(180deg, #000000 0%, #D2D2D2 100%);
     color: white;
     font-size: 20px;
     font-weight: 700;
@@ -30,4 +33,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 10px
+}
+/*main*/
+.daily{
+    margin-top: 20px;
+    padding: 20px 0;
+    overflow: hidden;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    color: #73AC76;
+    margin: 10px 0;
+}
+.daily .d_img{
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+}
+.daily .d_img:last-child{
+    margin-right: 0;
 }
