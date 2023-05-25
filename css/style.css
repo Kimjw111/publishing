@@ -10,6 +10,17 @@
     margin: 0 20px;
     position: relative;
 }
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    color: #73AC76;
+    margin: 10px 0;
+}
+.all_icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+}
 
 /* header */
 #header .logo{
@@ -35,18 +46,16 @@
     justify-content: center;
     bottom: 10px
 }
+
 /*main*/
+
+/*daily*/
 .daily{
     margin-top: 20px;
     padding: 20px 0;
     overflow: hidden;
 }
-h2{
-    font-weight: 400;
-    font-size: 20px;
-    color: #73AC76;
-    margin: 10px 0;
-}
+
 .daily .d_img{
     float: left;
     width: 47%;
@@ -55,3 +64,44 @@ h2{
 .daily .d_img:last-child{
     margin-right: 0;
 }
+
+/*album*/
+.album{
+    margin-top: 0;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.album .al_img{
+    float: left;
+    width: 33%;
+    margin-right: 2%;
+}
+.album .al_img:last-child{
+    margin-right: 0;
+}
+.album .al_title .al_tit{
+    font-size: 14px;
+    color: red;
+    line-height: 20px;
+}
+.album .al_title .al_desc{
+    font-size: 12px;
+    color: bisque;
+    line-height: 20px;
+}
+
+/*slidemenu*/
+#slide-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  #slide-menu.hidden {
+    transform: translateX(0);
+  }

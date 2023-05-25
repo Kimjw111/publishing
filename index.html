@@ -48,10 +48,21 @@
       <div class="container">
         <div class="row">
           <h1 class="logo">Apple Music</h1>
-          <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+          <div class="menu">
+            <i class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></i>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- 슬라이드 메뉴 -->
+    <div id="slide-menu" class="">
+      <ul>
+        <li>메뉴 항목1</li>
+        <li>메뉴 항목2</li>
+        <li>메뉴 항목3</li>
+      </ul>
+    </div>
     <!-- //상단 메뉴 -->
     <main>
       <section class="music">
@@ -85,6 +96,7 @@
           <div class="container">
             <div class="row">
               <h2>Lastest Album</h2>
+              <span class="all_icon">See All</span>
               <div class="al_music">
                 <div class="al_img">
                   <picture>
@@ -129,17 +141,7 @@
       </section>
     </main>
     <!-- //main -->
-
-    <!-- script -->
-    <script>
-      //slick
-      $(".da_music").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-      });
-    </script>
+    <script src="/js/script.js"></script>
+    <!-- script 구동하는 스크립트는 상단에 중간중간에 구동은 밑으로 -->
   </body>
 </html>
