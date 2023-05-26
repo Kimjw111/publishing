@@ -19,8 +19,8 @@ h2{
 .all_icon{
     float: right;
     position: relative;
-    bottom: 20px;
-}
+    bottom: 22px;
+    }
 
 /* header */
 #header .logo{
@@ -90,6 +90,50 @@ h2{
     line-height: 20px;
 }
 
+/*artist*/
+.artist{
+    margin-top: 0;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.artist .ar_warp{
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+.artist .ar_img{
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+}
+.artist .ar_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.artist .ar_title .ar_tit{
+    font-size: 14px;
+    color: red;
+    line-height: 20px;
+    font-weight: 700;
+}
+.artist .ar_title .ar_desc{
+    font-size: 12px;
+    color: #dddddd;
+    line-height: 20px;
+}
+.artist .ar_icon{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+.artist .all_icon{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
 /*slidemenu*/
 #slide-menu {
     position: fixed;
@@ -100,8 +144,27 @@ h2{
     background-color: #f1f1f1;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
+    background-color: grey;
   }
-
+  #slide-menu a{
+    color: wheat;
+    text-decoration: none;
+  }
+  #slide-menu li{
+    padding: 10px;
+    margin: 10px;
+  }
   #slide-menu.hidden {
     transform: translateX(0);
+    z-index: 1;
+  }
+
+  /*슬라이드 닫기*/
+  #close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
   }

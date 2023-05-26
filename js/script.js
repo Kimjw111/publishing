@@ -19,3 +19,10 @@
     var slideMenu = document.getElementById("slide-menu");
     slideMenu.classList.toggle("hidden");
   }
+  const slideMenu = document.getElementById('slide-menu');
+    const closeBtn = document.getElementById('close-btn');
+
+    // 닫기 버튼 클릭 시 메뉴 닫기
+    closeBtn.addEventListener('click', function () {
+      slideMenu.classList.remove('hidden');
+    });
