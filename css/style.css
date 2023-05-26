@@ -16,11 +16,11 @@ h2{
     color: #73AC76;
     margin: 10px 0;
 }
-.all_icon{
-    float: right;
-    position: relative;
-    bottom: 22px;
-    }
+.align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* header */
 #header .logo{
@@ -110,7 +110,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 80%;
 }
 .artist .ar_title .ar_tit{
     font-size: 14px;
@@ -128,11 +128,7 @@ h2{
     right: 0;
     bottom: 30px;
 }
-.artist .all_icon{
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-}
+
 
 /*slidemenu*/
 #slide-menu {
