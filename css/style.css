@@ -185,8 +185,10 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 30%;
+    margin: 0 auto;
 }
+.flex_con div{padding-right: 10px;}
 
 /*하단 nav*/
 .nav{
