@@ -14,6 +14,14 @@
     autoplaySpeed: 2000,
     arrows: false,
   });
+   //slick
+   $(".my_music").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  });
   //slidemenu
   function toggleMenu() {
     var slideMenu = document.getElementById("slide-menu");

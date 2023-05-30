@@ -129,6 +129,98 @@ h2{
     bottom: 30px;
 }
 
+/*my music*/
+.mymusic{
+    margin-top: 0;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.mymusic .my_img{
+    float: left;
+    width: 33%;
+    margin-right: 2%;
+  }
+.mymusic .my_img img{
+    border-radius: 50%;
+}
+.mymusic .my_img:last-child{
+    margin-right: 0;
+}
+.mymusic .my_title .my_tit{
+    font-size: 14px;
+    color: #A65B5B;
+    line-height: 20px;
+}
+.mymusic .my_title .my_desc{
+    font-size: 12px;
+    color: #DDDDDD;
+    line-height: 20px;
+}
+
+/*하단 play 영역*/
+.play{
+    width: 100%;
+    height: 90px;
+    background: rgba(160,160,160,0.3);
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    bottom: 60px;
+}
+.play .play_txt{
+    width: 130px;
+    padding: 20px 20px;
+}
+.play .play_txt h3{
+    font-size: 16px;
+    font-weight: 700;
+    }
+.play .play_txt span{
+    font-size: 12px;
+    color: #767676;
+}
+.flex_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+/*하단 nav*/
+.nav{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    background:#fff;
+    bottom: 0;
+}
+.nav ul{
+    display: flex;
+    text-align: center;
+}
+.nav ul li{
+    flex-basis: 20%;
+    padding: 10px 0;
+}
+.nav ul li a{
+    display: block;
+}
+.nav ul li a span{
+    display: block;
+    line-height: 12px;
+    font-size: 12px;
+    color: red;
+}
+
+/*미디어쿼리*/
+@media(max-width:480px){
+    ul li img{width: 30%;}
+} 
+@media(width:1132px){
+    ul li img{width: 10%;}
+}
 
 /*slidemenu*/
 #slide-menu {
